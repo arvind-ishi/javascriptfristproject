@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style=" background-color: black; color: white; padding: 0; margin: 0; ">
+    <div>
+        <h2>amezing image </h2>
+        <ul class="image">
+            <li id="elephant"><img
+                    src="https://images.pexels.com/photos/18451756/pexels-photo-18451756/free-photo-of-elephant-sculpture-in-forest.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                    width="200px" alt="elephant" id="ele"></li>
+            <li id="owl"><img
+                    src="https://images.pexels.com/photos/2548433/pexels-photo-2548433.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                    alt="owl" width="200px"></li>
+            <li id="robot"><img
+                    src="https://images.pexels.com/photos/8386363/pexels-photo-8386363.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                    width="200px" alt="robot"></li>
+            <li id="labtop"><img
+                    src="https://images.pexels.com/photos/577210/pexels-photo-577210.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                    width="200px" alt="laptop"></li>
+            <li> <a style=" text-decoration: none; " href="https://www.google.com" id="google">Google</a></li>
+        </ul>
+
+    </div>
+</body>
+<script>
+    // 
+    //  const avij =  document.getElementById('elephant').addEventListener('click' ,function(e){
+    //    
+    //   console.log(Math.round((e.timeStamp)));
+    // 
+    // console.log(e.clientX)
+    //console.og(e.pageY)
+    // console.log(e.movementX)
+    // console.log(e.offsetY)
+    // console.log(e.x)
+    // console.log(e.isTrusted)
+    // console.log(e.width)
+    // 
+    // console.log(e.height)
+    // console.log(e)
+    // console.log(e.type);
+    // console.log(e.target)
+    // console.log(e.toElement)
+    // console.log(e.srcElement)
+    // console.log(e.currentTarget);
+    // console.log(e.clientX)
+    // console.log(e.clientY)
+    // console.log(e.screenX)
+    // console.log(e.screenY)
+    // console.log(e.keyCode)
+    // console.log(e.keyCode)
+    // console.log(e.altKey)
+    // console.log(e.ctrlKey)
+    // console.log(e.shiftKey
+    // )
+    // 
+    // });
+    // 
+
+    // const ul = document.querySelector('.image').addEventListener('click', function (e) {
+
+    // console.log('the ul click ');
+
+    // }, false)// false is used to evet bubaling it go from the bottom to top 
+    // const li = document.querySelector('#owl').addEventListener('click', function (e) {
+    // console.log(" the owl is clicked");
+
+    // }, false)
+
+
+    // const ul = document.querySelector('.image').addEventListener('click', function (e) {
+    // console.log('the ul click ');
+    // }, true)// false is used to evet bubaling it go from the bottom to top 
+    // const li = document.querySelector('#owl').addEventListener('click', function (e) {
+    // console.log(" the owl is clicked");
+    // }, true)// true is used for the event capcharing and it gos from the top to buttom 
+
+
+    // const ul = document.querySelector('.image').addEventListener('click', function (e) {
+        // console.log('the ul click ');
+
+    // }, false)// false is used to evet bubaling it go from the bottom to top 
+    // const li = document.querySelector('#owl').addEventListener('click', function (e) {
+        // console.log(" the owl is clicked");
+        // e.stopPropagation()
+    // }, false)
+
+
+
+    // const google = document.getElementById('google').addEventListener('click', function (e) {
+        
+        // e.preventDefault();
+        // e.stopPropagation();
+        // console.log("google click ");
+
+
+
+    // }, true);
+
+
+
+    const image = document.querySelector('.image').addEventListener('click', function (e) {
+
+        console.log(e.target.tagName);
+
+        console.log(e.target.id);
+
+     if (e.target.tagName === "IMG") {
+
+
+        let removeit = e.target.parentNode;
+            removeit.remove();
+
+        };
+
+
+    });
+
+
+</script>
+
+</html>

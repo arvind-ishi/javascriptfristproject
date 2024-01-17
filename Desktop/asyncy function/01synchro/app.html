@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>chai aur javascript </h1>
+    <button id="start"> start</button>
+    <button id="stop">stop</button>
+
+</body>
+
+<script>
+    const sayTime = function () {
+        console.log("hetesh", Date.now());
+        let intervalId;
+
+    }
+    const intervalstart = document.querySelector('#start');
+    intervalstart.addEventListener('click', function () {
+        intervalId = setInterval(sayTime, 1000)
+    })
+
+    const stopp = document.querySelector('#stop')
+    stopp.addEventListener('click', function () {
+        clearInterval(intervalId);
+    })
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+</html>

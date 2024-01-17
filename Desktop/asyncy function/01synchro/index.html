@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>chai aur code </h1>
+    <button id="stop">
+        stop
+    </button>
+</body>
+<script>
+    setTimeout(() => {
+        console.log("arvind jadhav");
+    }, 2000);
+
+    const avi = () => {
+        console.log("avi jadhav")
+    };
+    setTimeout(avi, 4000);
+
+
+    const avid = function () {
+
+
+        document.querySelector('h1').innerHTML = "avi is so bad boy "
+    }
+    setTimeout(avid, 3000)
+
+
+    const timeForChange = function () {
+        document.querySelector('h1').innerHTML = " js is the best series ";
+
+    }
+
+    let settime = setTimeout(timeForChange, 4000);
+
+    const stoptime = document.querySelector('#stop')
+
+    stoptime.addEventListener('click', function () {
+        clearTimeout(settime);
+        console.log("stopped the event ", Date())
+    });
+
+
+
+
+</script>
+
+</html>

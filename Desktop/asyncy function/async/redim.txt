@@ -1,0 +1,4 @@
+// the javascript is the syncronus
+synchronous
+
+and single threaded
